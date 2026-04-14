@@ -1,9 +1,12 @@
 # Healthcare Data Analysis with Python
 
-This project analyzes healthcare claims data to identify key cost drivers, demographic trends, and the impact of chronic conditions on healthcare spending.
+## Overview
+
+End-to-end analysis of healthcare claims data using Python to identify cost drivers, demographic trends, and the impact of chronic conditions on healthcare spending.
 
 ## Tools Used
-- Python (pandas, matplotlib)
+
+- Python (pandas for data analysis, matplotlib for visualization)
 - Jupyter Notebook
 
 ## Project Overview
@@ -11,13 +14,21 @@ This project analyzes healthcare claims data to identify key cost drivers, demog
 This analysis explores how patient demographics and chronic conditions influence healthcare reimbursement patterns.
 
 Key steps included:
-- Data cleaning and preprocessing
-- Feature engineering (age calculation from DOB)
-- Outlier handling
-- Creation of a total reimbursement metric (inpatient + outpatient)
-- Aggregation and grouping for analysis
-- Data visualization
-- Insight generation
+- Data cleaning and preprocessing  
+- Feature engineering (age calculation from DOB)  
+- Outlier handling  
+- Creation of a total reimbursement metric (combining inpatient and outpatient costs)
+- Aggregation and grouping using pandas (groupby operations)
+- Data visualization  
+- Insight generation  
+
+## Visualization Examples
+
+### Age-Based Cost Analysis
+![Age Analysis](age_analysis.png)
+
+### Diabetes Cost Analysis
+![Diabetes Analysis](diabetes_analysis.png)
 
 ## Key Insights
 
@@ -28,20 +39,16 @@ Key steps included:
 
 ### Chronic Condition Impact (Diabetes)
 - Beneficiaries with diabetes had significantly higher average reimbursement compared to those without diabetes  
-- Chronic conditions are a major driver of healthcare costs in this dataset
-
-## Visualization Examples
-
-### Age-Based Cost Analysis
-![Age Analysis](age_analysis.png)
-
-### Diabetes Cost Analysis
-![Diabetes Analysis](diabetes_analysis.png)
+- Average reimbursement for beneficiaries with diabetes was more than double that of those without diabetes, highlighting a substantial cost differential
+- Chronic conditions are a major driver of healthcare costs in this dataset  
 
 ## Project Structure
 
-- `healthcare_analysis.ipynb` → Full analysis, code, and visualizations  
-- Dataset used for analysis  
+- `healthcare_analysis.ipynb` → Full analysis, code, and visualizations
+
+## Data Source
+
+This project uses a publicly available healthcare claims dataset commonly used for fraud detection and cost analysis. The data includes patient demographics, chronic condition indicators, and reimbursement information.
 
 ## How to Run
 
